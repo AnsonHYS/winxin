@@ -1,0 +1,63 @@
+.page-section-gap{
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+
+.page-body-button {
+  margin-bottom: 30rpx;
+}
+.btn-area{
+  display: block;
+  margin: 0 auto  10px auto;
+}
+
+button{
+  vertical-align: top;
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 10px;
+  border-radius:3px; 
+   
+}
+.tips{
+  position: relative;
+  width: 80%;
+  display: block;
+  padding: 10px;
+  box-sizing: border-box;
+  margin:10px auto;
+  background: #fffef4;
+  border-radius:10px; 
+  border:1px solid rgb(223, 223, 223);
+   
+}
+strong{
+   text-align: center;
+  display: block;
+  padding: 5px;
+  font-size: 20px!important;
+  color: rgb(34, 180, 15);
+  border-bottom:1px solid rgb(74, 209, 126); 
+}
+p{
+  width: 100%;
+  
+font-size: 14px;   
+display: table;
+border: 0;
+color: #adadad;
+margin: 2px;
+box-sizing:border-box;
+
+}
+p>span{
+  display: table-cell;
+  color: rgb(0, 0, 0);
+  width: 50px;
+  text-align: right;
+  padding:5px; 
+
+}

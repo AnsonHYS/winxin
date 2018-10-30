@@ -1,0 +1,8 @@
+<!--pages/about/about.wxml-->
+<view class='content' style='height:{{Wheight}}px;'>
+<image class='logo' src='https://lg-0xborurq-1251997706.cos.ap-shanghai.myqcloud.com/logos.jpg'></image>
+<view class='text'>
+   <p>关于Ai生活，纯粹是为了记录一下生活中的美图而开发的程序，二来为了检验一下学习小程序的效果。不喜勿喷，欢迎交流心得，一切为了更美好的生活奋斗！！</p>
+</view>
+
+</view>

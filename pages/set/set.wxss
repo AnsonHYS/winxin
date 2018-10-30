@@ -1,0 +1,40 @@
+/* pages/set/set.wxss */
+.hr{
+  height: 9px;
+  background-color: #ccc;
+  
+  opacity: 0.2;
+}
+
+.li-item{
+  position: relative;
+  height: 50px;
+  font-size: 16px;
+  line-height: 25px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  vertical-align: top;
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+.li-item::after{
+  position: absolute;
+    right: 15px;
+    top: 18px;
+    width: 0;
+    height: 0;
+    content: "";
+    border-width: 6px 0px 6px 6px;
+    border-style: solid;
+    border-color: transparent rgb(180, 178, 178)  ;
+    
+}
+
+.li-item text{
+  margin-left: 5px;
+  display: inline-block;
+  line-height:40px;
+  vertical-align: top;
+  color: rgb(59, 59, 59);
+
+
+}

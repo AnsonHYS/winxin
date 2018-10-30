@@ -1,0 +1,32 @@
+/* pages/about/about.wxss */
+.content{
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100vw;
+  
+  background: url(https://lg-0xborurq-1251997706.cos.ap-shanghai.myqcloud.com/bg2.jpeg) no-repeat 0% 0px;
+  background-size: cover;  
+
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius:3px;
+  padding: 5px; 
+  background: rgb(245, 245, 245);
+}
+.text{
+  font-size: 14px;
+  margin: 25px 10px;
+  background: rgba(248, 246, 224, 0.74);
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius:3px; 
+}
+.text>p{
+  text-indent:2rem;
+}

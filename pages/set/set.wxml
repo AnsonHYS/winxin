@@ -1,0 +1,17 @@
+<!--pages/set/set.wxml-->
+<view>
+ 
+<navigator url="../manageAcc/manageAcc"  class='li-item'>
+<text>完善资料</text>
+</navigator>
+<view class='hr'></view>
+<navigator url="../about/about" class='li-item'>
+  <text>关于Ai生活</text>
+</navigator>
+<navigator url="../contact/contact" class='li-item'>
+  <text>联系我们</text>
+</navigator>
+
+ 
+</view>
+  

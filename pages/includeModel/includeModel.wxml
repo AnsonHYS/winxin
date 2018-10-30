@@ -1,0 +1,19 @@
+<!--pages/7/7.wxml-->
+<swiper autoplay='true' interval='3000' duration='300' circular='true' indicator-dots="true" indicator-active-color="#fff" indicator-color="rgba(255, 255, 255, .5)" class='swiper-box'>
+      <block wx:for="{{swiperList}}" wx:key="*.id">
+        <swiper-item>
+          <image src="{{item}}" mode='widthFix' style="height:{{imgheights[current]}}rpx;width:{{imgwidth}}rpx;"bindload="imageLoad" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+<view class='hr2'></view>
+<view class="blogTitle"><label>文摘精华</label></view>
+<view class="listblog">
+  <view class='perList' wx:for="{{imgGroup}}" wx:key="author">
+    <image src="{{item.img}}" mode="widthFix"></image>
+    <text>{{item.text}}</text>
+    <text class='author'>作者：{{item.author}}</text>
+    <view class='hr'></view>
+  </view>
+</view>

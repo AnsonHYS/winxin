@@ -1,0 +1,59 @@
+<!--pages/find/find.wxml-->
+<!-- tab导航栏 -->
+<view class='content'>
+<scroll-view scroll-x="true" scroll-left="{{scrollLeft}}" style="white-space: nowrap;width: 100%; height:25px;display: flex">
+ <view  data-num="0" class="part {{currnum==0?'cur':''}}" bindtap="menuClick">推荐</view>
+  <view  data-num="1" class="part {{currnum==1?'cur':''}}" bindtap="menuClick">美食</view>
+  <view  data-num="2" class="part {{currnum==2?'cur':''}}" bindtap="menuClick">旅行</view>
+  <view  data-num="3" class="part {{currnum==3?'cur':''}}" bindtap="menuClick">视频</view>
+   <view  data-num="4" class="part {{currnum==4?'cur':''}}" bindtap="menuClick">萌宠</view>
+  
+   
+  </scroll-view>  
+  <view wx:if="{{currnum==0}}">
+     <include src="../includeModel/includeModel.wxml"/>
+  </view>
+   <view wx:if="{{currnum==1}}">
+    <import src="../findModel/findModel.wxml"/>
+    <template is="item" data="{{ArrayData: foodList}}"/>
+     
+  </view>
+  <view wx:if="{{currnum==2}}">
+    <import src="../findModel/findModel.wxml"/>
+    <template is="item" data="{{ArrayData: blogList}}"/>
+  </view>
+   <view wx:if="{{currnum==3}}">
+
+     <view class="listblog">
+      <view class='perList' wx:for="{{videoGroup}}" index="index"  wx:key="author">
+        <!-- <video src="{{item.src}}" poster="{{item.src}}" binderror="videoErrorCallback" objectFit="contain" controls ></video> -->
+        <!-- TEST -->
+       
+        <view class="case-li case-view-item">
+           <image hidden="{{item.isPlaying}}" style="" class="case-picture" src="{{item.minsrc}}" mode="scaleToFill"></image>
+          <!-- 是视频 -->
+         
+          <video wx:if="{{item.isPlaying}}" id="video-{{index}}" class="video" src="{{item.src}}" controls></video>
+          <image wx:if="{{item.type==1}}" hidden="{{item.isPlaying}}" class="bt" mode="scaleToFill"  
+          data-item='{{item}}' data-index='{{index}}' bindtap="playVideo" src="../../image/tab/play-bt.png"></image>  <!--前提一个播放的按钮-->
+        </view>
+        <!-- TEST end -->
+        <text>{{item.text}}</text>
+        <text class='author'>作者：{{item.author}}</text>
+        <view class='hr'></view>
+      </view>
+     </view><!--listblog  end   -->
+  </view>
+  
+  <view wx:if="{{currnum==4}}">
+    <import src="../findModel/findModel.wxml"/>
+    <template is="item" data="{{ArrayData: animalList}}"/>
+  </view>
+</view>
+  
+  
+ 
+   
+  
+
+     

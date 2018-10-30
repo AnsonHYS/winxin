@@ -1,0 +1,28 @@
+<!--pages/myBlog/myBlog.wxml-->
+<view class='B_top'>
+<image class="bg" src='https://lg-0xborurq-1251997706.cos.ap-shanghai.myqcloud.com/bg.jpg'></image>
+<view class="iconDiv"><image class="icon" src="https://lg-0xborurq-1251997706.cos.ap-shanghai.myqcloud.com/icon.png"></image></view>
+<text class='name'>勿忘初心</text>
+<view class='cnt'>
+  <label>关注:74</label>
+  <label>粉丝:7</label>
+  <label>喜欢:8</label>
+</view>
+</view>
+<view class='hr'></view>
+<view class='B_bottom'>
+  <view class='blogs' wx:for="{{blogList}}" wx:for-item="L">
+    <view class='title'>
+      <image class="ic" src="https://lg-0xborurq-1251997706.cos.ap-shanghai.myqcloud.com/icon.png"></image>
+      <text class='user'>勿忘初心</text>
+      <text class='date'>{{L.date}}</text>
+    </view>
+    <image class="live" src="{{L.img}}" mode="widthFix"></image>
+    <view class='tips'>
+      <view class='address'>{{L.position}}</view>
+      <view class="label">#<label  wx:for="{{L.label}}" wx:for-item="per">{{per}}</label></view>
+      <view class="count"><label class='left'>{{L.hit}}热度</label><label class="right">{{L.scan}}人阅读过</label></view>
+    </view>
+  </view>
+
+</view>

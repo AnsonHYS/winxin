@@ -1,0 +1,126 @@
+/* pages/headline/headline.wxss */
+.TitleDiv{
+padding:0 10px;
+border-bottom:1px solid rgb(238, 238, 238);
+
+}
+
+.Title{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.select{
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 16px;
+  line-height: 45px;
+  text-align: center;
+  width: 50%;
+  color: rgb(5, 5, 5);
+  border-bottom: 2rpx solid rgb(5, 5, 5);
+  
+}
+.default{
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 16px;
+  line-height: 45px;
+  text-align: center;
+  width: 50%;
+  color: rgb(163, 163, 163);
+  border-bottom: 2rpx solid rgb(255, 255, 255);
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+
+
+/*数据列表*/
+.title{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.ic{
+  
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.user{
+width: 65%;
+font-size: 18px;
+color: rgb(82, 82, 82);
+line-height: 35px;
+padding-left: 10px;
+}
+.date{
+  width: 25%;
+  font-size: 14px;
+  color: rgb(172, 172, 172);
+  line-height: 35px;
+}
+.live{
+  display: block;
+  width: 100%;
+}
+.address{
+  position: relative;
+  display: block;
+  padding: 5px 10px 5px 30px;
+  font-size: 15px;
+  color: rgb(168, 168, 168);
+}
+.address::before{
+content: "✈";
+position: absolute;
+left: 8px;
+
+}
+.label,.count{
+   display: block;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: rgb(168, 168, 168);
+}
+.label{
+  border-bottom: 1px solid rgb(221, 218, 218);
+}
+.label>label{
+  margin: 0 10px;
+   
+}
+.right{
+  float: right;
+ 
+}
+.count{
+  border-bottom:8px solid rgb(237, 236, 238); 
+  position: relative;
+}
+.count>label{
+  line-height: 25px;
+  vertical-align: top
+}
+
+.hert{
+  background: url(https://lg-0xborurq-1251997706.cos.ap-shanghai.myqcloud.com/hert.png) no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right:5px; 
+}
+.like{
+   background: url(https://lg-0xborurq-1251997706.cos.ap-shanghai.myqcloud.com/hert_red.png) no-repeat;
+   background-size: 100% 100%;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right:5px; 
+}
+

@@ -1,0 +1,46 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+  <view class="hr"></view>
+  <view class="item">
+     <input type="text" name="loginName" placeholder="设置账户名" placeholder-class="holder" bindblur="accountblur"/>
+  </view>
+  <view class="item flex">
+     <input type="text" password="{{isShow}}" name="password"  placeholder="设置密码" placeholder-class="holder"/>
+     <switch type="switch" name="switch"  bindchange="switchChange"/>
+  </view>
+   
+  <view class="item">
+     <input type="text" name="userName" placeholder="实名" placeholder-class="holder" />
+  </view>
+  <view class="sex-item">
+   
+     <picker mode="date" value="{{date}}" start="1890-01-01" end="2019-09-01" bindchange="bindDateChange">
+      <label class='le'>生日：</label><view class="picker" name="company">{{date}}</view>
+  </picker>
+  </view>
+  <view class="sex-item">
+  <label class='le'>性别：</label> 
+      <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio" wx:for="{{items}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+      </label>
+    </radio-group>
+     
+  </view>
+  <view class="item">
+     <input type="text" name="mobile" placeholder="请输入手机号" placeholder-class="holder" />
+  </view>
+  <view class="mobileInfo">
+    <view class="mobile">
+      <input type="text" name="code" placeholder="短信验证码 " placeholder-class="holder" />
+    </view>
+     <view class="code">发送验证码</view>
+  </view>
+  
+  <button class="btn" disabled="{{disabled}}" type="{{btnstate}}" form-type="submit">保存</button>
+  <view class="xieyi">
+     <text class="agree">保存即视为同意</text><text class="opinion">《Ai生活用户注册协议》</text>
+  </view>
+</view>
+
+</form>

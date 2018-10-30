@@ -1,0 +1,55 @@
+{
+  "pages": [
+     
+    "pages/index/index",  
+    "pages/me/me",
+    "pages/manageAcc/manageAcc",
+    "pages/find/find",
+    "pages/about/about",
+    "pages/logs/logs",
+    "pages/msg/msg",
+    "pages/myBlog/myBlog",
+    "pages/set/set",
+    "pages/findModel/findModel",
+    "pages/includeModel/includeModel",
+     "pages/contact/contact"
+     
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#444",
+    "navigationBarTitleText": "Ai 生活",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#444",
+    "backgroundColor": "#fff",
+    "borderStyle": "#FFFFF0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/tab/home.png",
+        "selectedIconPath": "image/tab/home-on.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "image/tab/find.png",
+        "selectedIconPath": "image/tab/find-on.png"
+      },
+      {
+        "pagePath": "pages/msg/msg",
+        "text": "消息",
+        "iconPath": "image/tab/msg.png",
+        "selectedIconPath": "image/tab/msg-on.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "image/tab/me.png",
+        "selectedIconPath": "image/tab/me-on.png"
+      }
+    ]
+  }
+}

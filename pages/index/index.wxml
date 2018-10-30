@@ -1,0 +1,48 @@
+<!--pages/headline/headline.wxml-->
+<view class='indexDiv'>
+  <view class='TitleDiv'>
+  <view class='Title'>
+          <view class='{{currentTab==0?"select":"default"}}' data-current='0' bindtap='tab'>推荐</view>
+          <view class='{{currentTab==1?"select":"default"}}' data-current='1' bindtap='tab'>关注</view>
+      </view>
+  </view>
+    
+    
+     
+     
+       <view style='margin-top:10px;width:100%;height:auto;' class='{{currentTab==0?"show":"hide"}}'>
+         <view class='blogs' wx:for="{{blogList}}" wx:key="id" wx:for-item="L">
+              <view class='title'>
+                <image class="ic" src="{{L.icon}}"></image>
+                <text class='user'>{{L.acc}}</text>
+                <text class='date'>{{L.date}}</text>
+              </view> 
+            <image class="live" src="{{L.img}}" mode="widthFix"></image>
+            <view class='tips'>
+              <view class='address'>{{L.position}}</view>
+              <view class="label">#<label  wx:for="{{L.label}}" wx:key="id" wx:for-item="per">{{per}}</label></view>
+              <view class="count"><label class='{{L.like?"like":"hert"}}' data-type="left" data-obj="{{L}}" data-id="{{L.id}}" bindtap='tolike'></label><label class='left'>{{L.hit}}热度</label><label class="right">{{L.scan}}人阅读过</label></view>
+            </view>
+        </view>
+       </view>
+      <view style='margin-top:10px;width:100vw;height:1000px;' class='{{currentTab==1?"show":"hide"}}'>
+       <view class='blogs' wx:for="{{likeList}}" wx:key="id" wx:for-item="L">
+              <view class='title'>
+                <image class="ic" src="{{L.icon}}"></image>
+                <text class='user'>{{L.acc}}</text>
+                <text class='date'>{{L.date}}</text>
+              </view> 
+            <image class="live" src="{{L.img}}" mode="widthFix"></image>
+            <view class='tips'>
+              <view class='address'>{{L.position}}</view>
+              <view class="label">#<label  wx:for="{{L.label}}" wx:key="id" wx:for-item="per">{{per}}</label></view>
+              <view class="count"><label class='{{L.like?"like":"hert"}}' data-type="right" data-obj="{{L}}" data-id="{{L.id}}" bindtap='tolike'></label><label class='left'>{{L.hit}}热度</label>  <label class="right">{{L.scan}}人阅读过</label></view>
+            </view>
+        </view>
+      </view>
+   
+        
+ 
+  
+
+</view>

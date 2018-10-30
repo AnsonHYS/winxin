@@ -1,0 +1,13 @@
+<!--pages/msg/msg.wxml-->
+<view class='li-item' >
+  <image src='../../image/tab/ifans.png'></image>
+  <text>粉丝</text>
+</view>
+  <view class='li-item'>
+  <image src='../../image/tab/ilike.png'></image>
+  <text>喜欢</text>
+</view>
+<view class='li-item' >
+  <image src='../../image/tab/imsg.png'></image>
+  <text>通知</text>
+</view>

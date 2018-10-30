@@ -1,0 +1,43 @@
+<!--pages/me/me.wxml-->
+<view class="condiv">
+   <view class='top'>
+      <view class='icon' bindtap='myBlog' style='background:url(https://lg-0xborurq-1251997706.cos.ap-shanghai.myqcloud.com/banner.jpg) no-repeat;background-size:100% 100%;'>
+        <image src='https://lg-0xborurq-1251997706.cos.ap-shanghai.myqcloud.com/icon.png' class='iconImg'></image>
+        <view class='account'>
+          <text class='name'>勿忘初心</text>
+          <text class='id'>ID:yusheng222</text>
+        </view>
+        <view class='blog' >></view>
+      </view>
+    <view class='data'>
+       <view class='nav-item'>
+          <view>19</view>
+          <view class='tiptxt'>文章</view>
+        </view>
+        <view class='nav-item'>
+          <view>74</view>
+          <view class='tiptxt'>关注</view>
+        </view>
+        <view class='nav-item'>
+          <view>7</view>
+          <view class='tiptxt'>粉丝</view>
+        </view>
+        <view class='nav-item'>
+          <view>8</view>
+          <view class='tiptxt'>喜欢</view>
+        </view>
+     </view>
+
+   </view>
+    <view class='hr'></view>
+   <view class='bottom'>
+        <view class='li-item' bindtap='toSet'>
+          <image src='../../image/tab/edit.png'></image>
+          <text>设置</text>
+        </view>
+         <view class='li-item'>
+          <image src='../../image/tab/service.png'></image>
+          <text>在线客服</text>
+        </view>
+   </view>
+</view>
